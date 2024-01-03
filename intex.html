@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>counder</title>
+    <style>
+        main{
+            text-align: center;
+            padding: 200px;
+        }
+ button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2pxsolid blue;
+    cursor: pointer;
+ }
+ 
+ #counter{
+ font-size: 50px; 
+ margin-bottom: 20px;git.status
+ }
+    </style>
+</head>
+<body>
+     <main> 
+        <div id ="counter">
+               0
+        </div>
+        <div class="buttons">
+            <button id="up">up</button>  
+            <button id="reset"> reset</button>
+            <button id="down"> down</button>
+        </div>  
+     </main>
+     <script>
+        const counder =document.getElementById("counter")
+        const up = document.getElementById("up")
+        const down = document.getElementById("down")
+        const resetbtn = document.getElementById("reset")
+
+        let countervalue =0;
+        
+        up.addEventListener('click',function (event){
+            countervalue +=1;
+            counter.innerHTML=countervalue;
+        });
+          
+        down.addEventListener('click',function (event){
+            countervalue -=1;
+            counter.innerHTML=countervalue;
+        });
+          
+        reset.addEventListener('click',function (event){
+            countervalue =0;
+            counter.innerHTML=countervalue;
+        });
+
+     </script>
+</body>
+</html>
